@@ -22,15 +22,15 @@ public class EasyTasks {
     if (number < 0) {
       throw new IllegalArgumentException("Expected non-negative number, got " + number);
     }
-    double resultSQRT = 0;
+    double resultSqrt = 0;
     double decrement = 0.001;
     while (true) {
-      resultSQRT = resultSQRT + decrement;
-      if ((number / (Math.round(resultSQRT * resultSQRT)) < 1)) {
+      resultSqrt = resultSqrt + decrement;
+      if ((number / (Math.round(resultSqrt * resultSqrt)) < 1)) {
         break;
       }
     }
-    return Math.round(resultSQRT*1000)/1000.0d;
+    return Math.round(resultSqrt * 1000) / 1000.0d;
   }
 }
 

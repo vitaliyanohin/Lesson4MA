@@ -12,7 +12,9 @@ public class MainApplication {
     System.out.println("Next:");
     easyTasks.isPalindrome("Madam, I'm Adam!");
     System.out.println("Next:");
-    TextAnalyzer[] analyzers = {new SpamAnalyzer(new String[]{"spam", "spam test"}), new NegativeTextAnalyzer(), new TooLongTextAnalyzer(28)};
+    TextAnalyzer[] analyzers = {new SpamAnalyzer(new String[]{"spam", "spam test"}),
+                                new NegativeTextAnalyzer(),
+                                new TooLongTextAnalyzer(28)};
     System.out.println(checkLabels(analyzers, "v b spam test  орпроf"));
     System.out.println(checkLabels(analyzers, "v      орпроf"));
     System.out.println(checkLabels(analyzers, "v    :(  орпроf"));
