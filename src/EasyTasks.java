@@ -32,4 +32,3 @@ public class EasyTasks {
     return Math.round(resultSqrt * 1000) / 1000.0d;
   }
 }
-
