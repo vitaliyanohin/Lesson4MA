@@ -11,11 +11,10 @@ public class EasyTasks {
     return bigInteger;
   }
 
-  public void isPalindrome(String text) {
+  public static boolean isPalindrome(String text) {
     text = text.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
     String res = new StringBuilder(text).reverse().toString();
-    System.out.println(res.equals(text));
-
+    return res.equals(text);
   }
 
   public double sqrt(double number) {

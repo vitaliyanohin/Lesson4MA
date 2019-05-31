@@ -13,12 +13,12 @@ public class NegativeTextAnalyzer extends KeywordAnalyzer implements TextAnalyze
   }
 
   @Override
-  String[] getKeywords() {
+  protected String[] getKeywords() {
     return keywords;
   }
 
   @Override
-  Label getLabel() {
+  protected Label getLabel() {
     return Label.NEGATIVE_TEXT;
   }
 }

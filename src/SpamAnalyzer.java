@@ -17,12 +17,12 @@ public class SpamAnalyzer extends KeywordAnalyzer implements TextAnalyzer {
   }
 
   @Override
-  String[] getKeywords() {
+  protected String[] getKeywords() {
     return keywords;
   }
 
   @Override
-  Label getLabel() {
+  protected  Label getLabel() {
     return Label.SPAM;
   }
 }

@@ -10,7 +10,7 @@ public class MainApplication {
     System.out.println("Next:");
     System.out.println(easyTasks.factorial(3));
     System.out.println("Next:");
-    easyTasks.isPalindrome("Madam, I'm Adam!");
+    System.out.println(easyTasks.isPalindrome("Madam, I'm Adam!"));
     System.out.println("Next:");
     TextAnalyzer[] analyzers = {new SpamAnalyzer(new String[]{"spam", "spam test"}),
                                 new NegativeTextAnalyzer(),
