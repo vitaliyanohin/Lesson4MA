@@ -22,7 +22,6 @@ public class Car {
     this.maxSpeed = builder.maxSpeed;
   }
 
-
   public static class Builder {
     private String name;
     private String color;
