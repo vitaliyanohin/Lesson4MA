@@ -1,5 +1,5 @@
 public class AsciiCharSequence implements java.lang.CharSequence {
-  byte[] arr;
+ private byte[] arr;
 
   public AsciiCharSequence(byte[] arr) {
     this.arr = arr;
@@ -20,9 +20,7 @@ public class AsciiCharSequence implements java.lang.CharSequence {
     byte[] subArray = new byte[end - start];
     int incrementArrayIndex = 0;
     while (start < end) {
-      subArray[incrementArrayIndex] = this.arr[start];
-      start++;
-      incrementArrayIndex++;
+      subArray[incrementArrayIndex++] = this.arr[start++];
     }
     return new AsciiCharSequence(subArray);
   }
