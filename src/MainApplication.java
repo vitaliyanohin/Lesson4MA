@@ -41,8 +41,7 @@ public class MainApplication {
   private static void arrayAsciiBuilder() {
     int a = 0;
     for (int i = 33; i < 127; i++) {
-      arrayAsciiCharCode[a] = (byte) i;
-      a++;
+      arrayAsciiCharCode[a++] = (byte) i;
     }
   }
 }
